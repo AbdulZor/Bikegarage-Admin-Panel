@@ -1,0 +1,16 @@
+body, html {
+     height: 100%;
+     background-image: url("../../img/Grey-website-background-1024x640.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+/*
+Waarom dit?
+Om het plaatje dat bij de inlogpagina te zien is te centreren.
+Dit is een workaround. Het werkte niet, dus voeg ik dit toe.
+*/
+text-center img {
+    text-align: center;
+}

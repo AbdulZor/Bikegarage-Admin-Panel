@@ -1,0 +1,66 @@
+div#login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeLeft 1s;
+}
+
+div#form-container {
+    margin: 0 auto;
+    padding: 25px 10px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 2px 15px #00000026;
+}
+
+div#form-container input {
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border-radius: 2px;
+    border: 1px solid #e4e4e4;
+}
+
+div#form-container input[type="submit"] {
+    background: #31d7ff;
+    border-color: #31d7ff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+div#form-container input[type="submit"]:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+div#form-container input:focus, div#form-container input:not([type="submit"]):hover {
+    outline: none;
+    border-color: #dedede;
+    box-shadow: 0 1px 5px #00000024;
+}
+
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        margin-left: -100%;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+/*
+Waarom dit?
+Een irriterende margin/padding is altijd aanwezig.
+reboot.scss van bootstrap haalt het ook weg.
+Deze pagina (login.php) heeft nu geen bootstrap.
+*/
+body, html {
+    margin: 0;
+    padding: 0;
+}
